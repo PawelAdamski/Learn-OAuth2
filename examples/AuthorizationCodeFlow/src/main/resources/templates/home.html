@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>OAuth2 example</title>
+</head>
+<body>
+    <span th:if="${loggedUser.logged}">
+        <div align="center">
+            <img style="vertical-align:middle" th:src="${loggedUser.picture}">
+            <div>
+                <p> Hello <span th:text="${loggedUser.nickname}" /> </p>
+                <p> (<span th:text="${loggedUser.name}" />) </p>
+            </div>
+        </div>
+    </span>
+    <span th:if="${!loggedUser.logged}">
+        <div align="center">
+            <p> You are not logged in </p>
+            <p> To log in click <a th:href="@{/auth/login}">HERE</a> </p>
+        </div>
+    </span>
+</body>
+</html>

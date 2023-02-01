@@ -1,0 +1,5 @@
+oauth2:
+  domain: dev-b68oesg3lai78f1b.eu.auth0.com
+  client-id: p4NiTHMR9VVYWGFidRMDuw0a3wJkwIPm
+  client-secret: VG3d4fHqikRY5egli3-1JCF-a8P3aklKdAo1dVn7M3iXZ0vFP9Rmurf19w6eTiBU
+  redirectUri: http://localhost:8080/auth/callback
